@@ -130,14 +130,7 @@ footer{padding:36px 0;color:var(--mute);font-size:.95rem}footer .w{display:flex;
 <section id="kayit"><div class="w"><div class="cta c">
 <h2>Ücretsiz deneme dersine yer ayırtın</h2>
 <p class="lead">Formu doldurun, bir gün içinde sizi arayalım.</p>
-<form id="f">
-<label>Veli adı soyadı<input required name="v" autocomplete="name"></label>
-<label>Telefon<input required type="tel" name="t" autocomplete="tel"></label>
-<label>Çocuğun yaşı<input required type="number" min="4" max="18" name="y"></label>
-<label>Kademe<select name="k"><option>Anaokulu</option><option>İlkokul</option><option>Ortaokul</option><option>Lise</option></select></label>
-<button class="btn" type="submit">Deneme dersi talep et</button>
-</form>
-<p id="ok" role="status"></p>
+<p style="margin-top:28px"><a class="btn" href="https://forms.gle/T2ymedsTmxXVJS646" target="_blank" rel="noopener">Deneme dersi talep et</a></p>
 </div></div></section>
 
 <footer><div class="w"><span>© 2026 Master Robotik</span><span>Manisa · Pazartesi–Cumartesi 10.00–19.00</span></div></footer>
@@ -146,8 +139,7 @@ footer{padding:36px 0;color:var(--mute);font-size:.95rem}footer .w{display:flex;
 var tabs=document.querySelectorAll('.tab'),panels=document.querySelectorAll('.panel');
 tabs.forEach(function(t,i){t.addEventListener('click',function(){
 tabs.forEach(function(x,j){x.setAttribute('aria-selected',i===j);panels[j].hidden=i!==j});});});
-document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();
-document.getElementById('ok').textContent='Talebiniz alındı. Sizi en kısa sürede arayacağız.';this.reset();});
+
 </script>
 </body>
 </html>
